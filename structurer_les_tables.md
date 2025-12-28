@@ -1,4 +1,4 @@
-tructure SQL recommandée pour Smart Mobility Clermont
+Tructure SQL recommandée pour Smart Mobility Clermont
 📌 Schéma : mobility
 1. Table : traffic_data
 sql
@@ -84,6 +84,7 @@ SELECT
     m.vent,
     a.gravite,
     z.quartier
+
 FROM mobility.traffic_data t
 LEFT JOIN mobility.pollution_data p USING (date, heure)
 LEFT JOIN mobility.meteo_data m USING (date, heure)
